@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Captcha Bot",
+  "description": "Saves 3 seconds on every login",
+  "version": "1.0",
+  "icons": { 
+          "96": "icon.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://webkiosk.juet.ac.in/"],
+      "js": ["bypass.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
